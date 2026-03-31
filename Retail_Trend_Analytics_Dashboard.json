@@ -1,0 +1,122 @@
+{
+  "title": "Retail Trend Analytics Dashboard",
+  "subtitle": "Dataset to SQL to SQLite Viewer to dashboard presentation",
+  "repo": {
+    "user": "yashnbhale",
+    "name": "Retail-Trend-Analytics",
+    "branch": "main"
+  },
+  "kpis": [
+    {
+      "label": "Total Revenue",
+      "value": "$322,966.75"
+    },
+    {
+      "label": "Transactions",
+      "value": "1,000"
+    },
+    {
+      "label": "Units Sold",
+      "value": "5,510"
+    },
+    {
+      "label": "Avg Rating",
+      "value": "6.97"
+    },
+    {
+      "label": "Gross Income",
+      "value": "$15,379.37"
+    },
+    {
+      "label": "Avg Transaction",
+      "value": "$322.97"
+    }
+  ],
+  "charts": [
+    {
+      "title": "Revenue by Product Line",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Revenue%20by%20product%20line.png",
+      "fallbacks": [
+        "./Revenue%20by%20product%20line.png",
+        "./visuals/Revenue%20by%20product%20line.png",
+        "./images/Revenue%20by%20product%20line.png",
+        "Revenue%20by%20product%20line.png"
+      ],
+      "alt": "Revenue by Product Line",
+      "layout": "half"
+    },
+    {
+      "title": "Average Rating by Product Line",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Average%20Rating%20by%20product%20line.png",
+      "fallbacks": [
+        "./Average%20Rating%20by%20product%20line.png",
+        "./visuals/Average%20Rating%20by%20product%20line.png",
+        "./images/Average%20Rating%20by%20product%20line.png",
+        "Average%20Rating%20by%20product%20line.png"
+      ],
+      "alt": "Average Rating by Product Line",
+      "layout": "half"
+    },
+    {
+      "title": "Quantity Sold by Product Line",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Quantity%20sold%20by%20product%20line.png",
+      "fallbacks": [
+        "./Quantity%20sold%20by%20product%20line.png",
+        "./visuals/Quantity%20sold%20by%20product%20line.png",
+        "./images/Quantity%20sold%20by%20product%20line.png",
+        "Quantity%20sold%20by%20product%20line.png"
+      ],
+      "alt": "Quantity Sold by Product Line",
+      "layout": "half"
+    },
+    {
+      "title": "Payment Method Distribution",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Payment%20Method%20Distribution.png",
+      "fallbacks": [
+        "./Payment%20Method%20Distribution.png",
+        "./visuals/Payment%20Method%20Distribution.png",
+        "./images/Payment%20Method%20Distribution.png",
+        "Payment%20Method%20Distribution.png"
+      ],
+      "alt": "Payment Method Distribution",
+      "layout": "half"
+    },
+    {
+      "title": "Revenue by Branch",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Revenue%20by%20Branch.png",
+      "fallbacks": [
+        "./Revenue%20by%20Branch.png",
+        "./visuals/Revenue%20by%20Branch.png",
+        "./images/Revenue%20by%20Branch.png",
+        "Revenue%20by%20Branch.png"
+      ],
+      "alt": "Revenue by Branch",
+      "layout": "half"
+    },
+    {
+      "title": "Revenue by Customer Type",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Revenue%20by%20Customer%20type.png",
+      "fallbacks": [
+        "./Revenue%20by%20Customer%20type.png",
+        "./visuals/Revenue%20by%20Customer%20type.png",
+        "./images/Revenue%20by%20Customer%20type.png",
+        "Revenue%20by%20Customer%20type.png"
+      ],
+      "alt": "Revenue by Customer Type",
+      "layout": "half"
+    },
+    {
+      "title": "Revenue by Gender",
+      "src": "https://raw.githubusercontent.com/yashnbhale/Retail-Trend-Analytics/main/Revenue%20by%20Gender.png",
+      "fallbacks": [
+        "./Revenue%20by%20Gender.png",
+        "./visuals/Revenue%20by%20Gender.png",
+        "./images/Revenue%20by%20Gender.png",
+        "Revenue%20by%20Gender.png"
+      ],
+      "alt": "Revenue by Gender",
+      "layout": "center"
+    }
+  ],
+  "path_note": "Uses raw.githubusercontent.com URLs for GitHub-hosted images, with local file fallbacks."
+}
