@@ -1,0 +1,845 @@
+{
+    "version": 3,
+    "inquiries": [
+        {
+            "id": "3Sq54aoC2vc6qciXUoOGh",
+            "query": "SELECT \n    product_line AS category,\n    SUM(revenue) AS revenue\nFROM supermarket_sales\nGROUP BY product_line\nORDER BY revenue DESC;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "scatter",
+                        "mode": "markers+lines",
+                        "x": null,
+                        "xsrc": "category",
+                        "meta": {
+                            "columnNames": {
+                                "x": "category",
+                                "y": "revenue"
+                            }
+                        },
+                        "y": null,
+                        "ysrc": "revenue",
+                        "marker": {
+                            "size": 8,
+                            "line": {
+                                "width": 1,
+                                "color": "rgb(255, 255, 255)"
+                            },
+                            "color": "rgb(250, 34, 2)"
+                        },
+                        "line": {
+                            "width": 2,
+                            "color": "rgb(31, 119, 180)"
+                        },
+                        "hoverinfo": "x+y",
+                        "hoverlabel": {
+                            "namelength": 15
+                        }
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -0.30684315161661607,
+                            5.306843151616616
+                        ],
+                        "autorange": true,
+                        "title": {
+                            "text": "<b>Category</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        },
+                        "gridwidth": 1,
+                        "rangeslider": {
+                            "visible": false,
+                            "yaxis": {},
+                            "autorange": true,
+                            "range": [
+                                0,
+                                5
+                            ]
+                        },
+                        "showspikes": false,
+                        "type": "category"
+                    },
+                    "yaxis": {
+                        "range": [
+                            48600.16988345865,
+                            56738.41311654135
+                        ],
+                        "autorange": true,
+                        "title": {
+                            "text": "<b>Revenue</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        },
+                        "type": "linear"
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "showlegend": false,
+                    "plot_bgcolor": "rgb(255, 255, 255)",
+                    "colorway": [
+                        "#1f77b4",
+                        "#ff7f0e",
+                        "#2ca02c",
+                        "#d62728",
+                        "#9467bd",
+                        "#8c564b",
+                        "#e377c2",
+                        "#7f7f7f",
+                        "#bcbd22",
+                        "#17becf"
+                    ],
+                    "colorscale": {
+                        "sequential": [
+                            [
+                                0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1,
+                                "#f0f921"
+                            ]
+                        ]
+                    },
+                    "title": {
+                        "text": "<b>Revenue by Product Line</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "modebar": {
+                        "orientation": "h"
+                    }
+                },
+                "frames": []
+            },
+            "name": "Revenue by Product Line",
+            "updatedAt": "2026-03-30T23:09:33.339Z",
+            "createdAt": "2026-03-17T05:39:12.231Z"
+        },
+        {
+            "id": "_-sheV-DpkJKY6QsHi_ME",
+            "query": "SELECT \n    branch AS category,\n    SUM(revenue) AS revenue\nFROM supermarket_sales\nGROUP BY branch\nORDER BY revenue DESC;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "pie",
+                        "mode": "markers",
+                        "values": null,
+                        "valuessrc": "revenue",
+                        "meta": {
+                            "columnNames": {
+                                "values": "revenue",
+                                "labels": "category",
+                                "text": ""
+                            }
+                        },
+                        "labels": null,
+                        "labelssrc": "category",
+                        "name": "<br>",
+                        "showlegend": false,
+                        "sort": true,
+                        "direction": "clockwise",
+                        "textinfo": "label+percent",
+                        "rotation": 0
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "colorscale": {
+                        "sequentialminus": [
+                            [
+                                0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1,
+                                "#f0f921"
+                            ]
+                        ],
+                        "sequential": [
+                            [
+                                0,
+                                "#dcdcdc"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#f5c39d"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#f5a069"
+                            ],
+                            [
+                                1,
+                                "#b20a1c"
+                            ]
+                        ]
+                    },
+                    "colorway": [
+                        "#1f77b4",
+                        "#ff7f0e",
+                        "#2ca02c",
+                        "#d62728",
+                        "#9467bd",
+                        "#8c564b",
+                        "#e377c2",
+                        "#7f7f7f",
+                        "#bcbd22",
+                        "#17becf"
+                    ],
+                    "hiddenlabels": [],
+                    "title": {
+                        "text": "<b>Revenue by Branch</b>",
+                        "font": {
+                            "size": 20,
+                            "color": "rgb(0, 0, 0)"
+                        }
+                    },
+                    "paper_bgcolor": "rgb(255, 255, 255)",
+                    "extendpiecolors": true,
+                    "piecolorway": [
+                        "rgb(23, 28, 66)",
+                        "rgb(41, 58, 143)",
+                        "rgb(11, 102, 189)",
+                        "rgb(69, 144, 185)",
+                        "rgb(142, 181, 194)",
+                        "rgb(210, 216, 219)",
+                        "rgb(230, 210, 204)",
+                        "rgb(213, 157, 137)",
+                        "rgb(196, 101, 72)",
+                        "rgb(172, 43, 36)",
+                        "rgb(120, 14, 40)",
+                        "rgb(60, 9, 17)"
+                    ],
+                    "showlegend": false
+                },
+                "frames": []
+            },
+            "name": "Revenue by Branch",
+            "updatedAt": "2026-03-30T23:36:20.699Z",
+            "createdAt": "2026-03-17T05:46:47.213Z"
+        },
+        {
+            "id": "ZeUWaFwW--3-czAa8SVCh",
+            "query": "SELECT \n    product_line AS category,\n    SUM(quantity) AS quantity_sold\nFROM supermarket_sales\nGROUP BY product_line\nORDER BY quantity_sold DESC;\n\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "scatter",
+                        "mode": "markers",
+                        "x": null,
+                        "xsrc": "category",
+                        "meta": {
+                            "columnNames": {
+                                "x": "category",
+                                "y": "quantity_sold",
+                                "measure": "quantity_sold",
+                                "z": "",
+                                "values": "quantity_sold",
+                                "labels": "category",
+                                "header": {
+                                    "values": "quantity_sold"
+                                },
+                                "cells": {
+                                    "values": ""
+                                },
+                                "parents": "category",
+                                "ids": "category"
+                            }
+                        },
+                        "y": null,
+                        "ysrc": "quantity_sold",
+                        "orientation": "v",
+                        "measure": null,
+                        "measuresrc": "quantity_sold",
+                        "autocolorscale": true,
+                        "transpose": true,
+                        "values": null,
+                        "valuessrc": "quantity_sold",
+                        "labels": null,
+                        "labelssrc": "category",
+                        "contours": {
+                            "start": 860,
+                            "end": 970,
+                            "size": 10
+                        },
+                        "autocontour": true,
+                        "sizeref": 1,
+                        "header": {
+                            "values": null,
+                            "valuessrc": "quantity_sold"
+                        },
+                        "cells": {},
+                        "boxpoints": false,
+                        "bandwidth": 0,
+                        "parents": null,
+                        "parentssrc": "category",
+                        "marker": {
+                            "color": "rgb(255, 0, 0)",
+                            "size": 9,
+                            "line": {
+                                "width": 1,
+                                "color": "rgb(0, 0, 0)"
+                            }
+                        },
+                        "name": "<br>",
+                        "ids": null,
+                        "idssrc": "category",
+                        "branchvalues": "total"
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -0.3344671201814059,
+                            5.334467120181406
+                        ],
+                        "autorange": true,
+                        "title": {
+                            "text": "<b>Product Line</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        },
+                        "automargin": false,
+                        "side": "bottom",
+                        "tickson": "labels",
+                        "ticks": "",
+                        "rangeslider": {
+                            "visible": false,
+                            "yaxis": {},
+                            "autorange": true,
+                            "range": [
+                                -0.3344671201814059,
+                                5.334467120181406
+                            ]
+                        },
+                        "showspikes": false,
+                        "tickmode": "auto",
+                        "tickangle": "auto",
+                        "showticklabels": true,
+                        "showline": false,
+                        "type": "category"
+                    },
+                    "yaxis": {
+                        "range": [
+                            843.2792207792207,
+                            981.7207792207793
+                        ],
+                        "autorange": true,
+                        "title": {
+                            "text": "<b>Quantity</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        },
+                        "showticklabels": true,
+                        "type": "linear"
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "title": {
+                        "text": "<b>Quantity vs Product Line</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "scene": {
+                        "aspectratio": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        },
+                        "aspectmode": "auto"
+                    },
+                    "showlegend": false,
+                    "polar": {
+                        "angularaxis": {},
+                        "radialaxis": {
+                            "autorange": true,
+                            "range": [
+                                0,
+                                1
+                            ]
+                        }
+                    }
+                },
+                "frames": []
+            },
+            "name": "Quantity Sold by Product Line",
+            "updatedAt": "2026-03-31T00:26:15.671Z",
+            "createdAt": "2026-03-17T05:51:59.926Z"
+        },
+        {
+            "id": "aW2_eSOvoUSP0fXL60z-1",
+            "query": "SELECT \n    product_line AS category,\n    AVG(rating) AS avg_rating\nFROM supermarket_sales\nGROUP BY product_line\nORDER BY avg_rating DESC;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "scatter",
+                        "mode": "markers+lines",
+                        "meta": {
+                            "columnNames": {
+                                "x": "category",
+                                "y": "avg_rating",
+                                "measure": "avg_rating",
+                                "z": "",
+                                "values": "avg_rating",
+                                "labels": "category",
+                                "parents": "category",
+                                "ids": "avg_rating"
+                            }
+                        },
+                        "orientation": "v",
+                        "measure": null,
+                        "measuresrc": "avg_rating",
+                        "autocolorscale": true,
+                        "transpose": false,
+                        "x": null,
+                        "xsrc": "category",
+                        "y": null,
+                        "ysrc": "avg_rating",
+                        "contours": {
+                            "start": 6.84,
+                            "end": 7.1000000000000005,
+                            "size": 0.02
+                        },
+                        "autocontour": true,
+                        "values": null,
+                        "valuessrc": "avg_rating",
+                        "labels": null,
+                        "labelssrc": "category",
+                        "parents": null,
+                        "parentssrc": "category",
+                        "ids": null,
+                        "idssrc": "avg_rating",
+                        "branchvalues": "total",
+                        "line": {
+                            "shape": "spline",
+                            "smoothing": 1.1,
+                            "color": "rgb(31, 119, 180)"
+                        },
+                        "connectgaps": false,
+                        "marker": {
+                            "color": "rgb(250, 34, 2)",
+                            "symbol": "star-triangle-down",
+                            "size": 10,
+                            "line": {
+                                "width": 1,
+                                "color": "rgb(255, 255, 255)"
+                            }
+                        },
+                        "name": "<br>"
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -0.3142047838858582,
+                            5.314204783885859
+                        ],
+                        "autorange": true,
+                        "type": "category",
+                        "title": {
+                            "text": "<b>Product Line</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        },
+                        "tickfont": {
+                            "size": 12
+                        }
+                    },
+                    "yaxis": {
+                        "range": [
+                            6.8114975401529145,
+                            7.139220850651684
+                        ],
+                        "autorange": true,
+                        "type": "linear",
+                        "title": {
+                            "text": "<b>Avg Rating</b>",
+                            "font": {
+                                "size": 16
+                            }
+                        }
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "scene": {
+                        "aspectratio": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        },
+                        "aspectmode": "auto"
+                    },
+                    "title": {
+                        "text": "<b>Avg Rating per Category</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "showlegend": false
+                },
+                "frames": []
+            },
+            "name": "Average Rating by Product Line",
+            "updatedAt": "2026-03-31T00:32:47.555Z",
+            "createdAt": "2026-03-17T05:55:17.902Z"
+        },
+        {
+            "id": "g1diP-ile8YuK5pkJEV0w",
+            "query": "SELECT \n    payment_method AS category,\n    COUNT(*) AS transactions\nFROM supermarket_sales\nGROUP BY payment_method;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "pie",
+                        "mode": "markers",
+                        "values": null,
+                        "valuessrc": "transactions",
+                        "meta": {
+                            "columnNames": {
+                                "values": "transactions",
+                                "labels": "category"
+                            }
+                        },
+                        "labels": null,
+                        "labelssrc": "category",
+                        "name": "<br>",
+                        "showlegend": false,
+                        "sort": false,
+                        "direction": "clockwise",
+                        "textinfo": "label+percent"
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "title": {
+                        "text": "<b>Payment Method Distribution</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "showlegend": true,
+                    "piecolorway": [
+                        "rgb(23, 28, 66)",
+                        "rgb(41, 58, 143)",
+                        "rgb(11, 102, 189)",
+                        "rgb(69, 144, 185)",
+                        "rgb(142, 181, 194)",
+                        "rgb(210, 216, 219)",
+                        "rgb(230, 210, 204)",
+                        "rgb(213, 157, 137)",
+                        "rgb(196, 101, 72)",
+                        "rgb(172, 43, 36)",
+                        "rgb(120, 14, 40)",
+                        "rgb(60, 9, 17)"
+                    ],
+                    "extendpiecolors": true
+                },
+                "frames": []
+            },
+            "name": "Payment Method Distribution",
+            "updatedAt": "2026-03-31T00:46:02.699Z",
+            "createdAt": "2026-03-17T06:05:35.744Z"
+        },
+        {
+            "id": "LVc_lnMZH7SWhRmk6saxq",
+            "query": "SELECT \n    customer_type AS category,\n    SUM(revenue) AS revenue\nFROM supermarket_sales\nGROUP BY customer_type;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "funnelarea",
+                        "mode": "lines",
+                        "x": null,
+                        "xsrc": "category",
+                        "meta": {
+                            "columnNames": {
+                                "x": "category",
+                                "y": "revenue",
+                                "values": "revenue",
+                                "labels": "category"
+                            }
+                        },
+                        "y": null,
+                        "ysrc": "revenue",
+                        "orientation": "v",
+                        "autocolorscale": true,
+                        "bandwidth": 0,
+                        "stackgroup": 1,
+                        "values": null,
+                        "valuessrc": "revenue",
+                        "labels": null,
+                        "labelssrc": "category",
+                        "name": "<br>",
+                        "aspectratio": 1,
+                        "baseratio": 0.33,
+                        "marker": {
+                            "line": {
+                                "width": 3
+                            }
+                        },
+                        "textinfo": "label+percent",
+                        "showlegend": false
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -0.5,
+                            1.5
+                        ],
+                        "autorange": true,
+                        "type": "category"
+                    },
+                    "yaxis": {
+                        "range": [
+                            91235.24666666666,
+                            -91235.24666666666
+                        ],
+                        "autorange": true,
+                        "type": "linear"
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "polar": {
+                        "angularaxis": {},
+                        "radialaxis": {
+                            "autorange": true,
+                            "range": [
+                                0,
+                                1
+                            ]
+                        }
+                    },
+                    "title": {
+                        "text": "<b>Revenue by Customer Type</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "funnelareacolorway": [
+                        "#9e0142",
+                        "#d53e4f",
+                        "#f46d43",
+                        "#fdae61",
+                        "#fee08b",
+                        "#ffffbf",
+                        "#e6f598",
+                        "#abdda4",
+                        "#66c2a5",
+                        "#3288bd",
+                        "#5e4fa2"
+                    ]
+                },
+                "frames": []
+            },
+            "name": "Revenue by Customer Type",
+            "updatedAt": "2026-03-31T00:40:57.246Z",
+            "createdAt": "2026-03-17T06:12:06.860Z"
+        },
+        {
+            "id": "f1yXYzHkP_J-HniIopIfl",
+            "query": "SELECT \n    gender_customer AS category,\n    SUM(revenue) AS revenue\nFROM supermarket_sales\nGROUP BY gender_customer;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [
+                    {
+                        "type": "funnelarea",
+                        "mode": "markers",
+                        "x": null,
+                        "xsrc": "category",
+                        "meta": {
+                            "columnNames": {
+                                "x": "category",
+                                "y": "revenue",
+                                "values": "revenue",
+                                "labels": "category"
+                            }
+                        },
+                        "y": null,
+                        "ysrc": "revenue",
+                        "autocolorscale": true,
+                        "values": null,
+                        "valuessrc": "revenue",
+                        "labels": null,
+                        "labelssrc": "category",
+                        "name": "<br>",
+                        "showlegend": false,
+                        "textinfo": "label+percent"
+                    }
+                ],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -0.06306306306306306,
+                            1.063063063063063
+                        ],
+                        "autorange": true,
+                        "type": "category"
+                    },
+                    "yaxis": {
+                        "range": [
+                            154053.6150924596,
+                            168913.13390754038
+                        ],
+                        "autorange": true,
+                        "type": "linear"
+                    },
+                    "mapbox": {
+                        "style": "open-street-map"
+                    },
+                    "scene": {
+                        "aspectratio": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        },
+                        "aspectmode": "auto"
+                    },
+                    "title": {
+                        "text": "<b>Revenue by Gender of Customer</b>",
+                        "font": {
+                            "size": 20
+                        }
+                    },
+                    "funnelareacolorway": [
+                        "#3366cc",
+                        "#dc3912",
+                        "#ff9900",
+                        "#109618",
+                        "#990099",
+                        "#0099c6",
+                        "#dd4477",
+                        "#66aa00",
+                        "#b82e2e",
+                        "#316395"
+                    ]
+                },
+                "frames": []
+            },
+            "name": "Revenue by Gender",
+            "updatedAt": "2026-03-31T00:43:34.712Z",
+            "createdAt": "2026-03-17T06:22:07.792Z"
+        }
+    ]
+}
